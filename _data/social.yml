@@ -1,12 +1,19 @@
 # - title: Twitter
 #   url: https://twitter.com/ngzhio
 #   icon: fab fa-twitter
-- title: GitHub
-  url: https://github.com/wangjie-ruc
-  icon: fab fa-github
+
 - title: Weibo
   url: https://weibo.com/u/3621391992
   icon: fab fa-weibo
+
+- title: WeChat
+  url: /assets/wechat.jpeg
+  icon: fab fa-weixin
+
+- title: GitHub
+  url: https://github.com/wangjie-ruc
+  icon: fab fa-github
+
 - title: Mail
   url: mailto:jie.wang@ruc.edu.cn
   icon: fas fa-envelope
