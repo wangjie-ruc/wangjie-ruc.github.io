@@ -4,24 +4,28 @@
 
 - title: Weibo
   url: https://weibo.com/u/3621391992
-  icon: fab fa-weibo
+  icon: icon-weibo
 
 - title: WeChat
   url: /assets/wechat.jpeg
-  icon: fab fa-weixin
+  icon: icon-weixin
 
 - title: GitHub
   url: https://github.com/wangjie-ruc
-  icon: fab fa-github
+  icon: icon-github
 
 - title: Mail
   url: mailto:jie.wang@ruc.edu.cn
-  icon: fas fa-envelope
+  icon: icon-tubiao209
 
 - title: iPhone
   url: tel:17810351206
-  icon: fas fa-mobile
+  icon: icon-iPhoneX
+
+- title: zhihu
+  url: https://www.zhihu.com/people/wangjie-ruc
+  icon: icon-zhihu-circle-fill
 
 - title: yuque
   url: https://www.yuque.com/wangjie-ruc
-  icon: fab yuque
+  icon: icon-yuque

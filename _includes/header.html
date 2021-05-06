@@ -15,7 +15,11 @@
     {%- else -%}
       {%- assign avatar = site.avatar | relative_url -%}
     {%- endif -%}
-    <i class="far fa-user"></i>
+    <i>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-user"></use>
+      </svg>
+    </i>
   </a>
 
   <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>

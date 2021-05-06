@@ -3,6 +3,7 @@ description: 王杰的主页
 author: 王杰 Jie Wang
 avatar: /logo.jpeg
 email: jie.wang@ruc.edu.cn
+location: 北京 海淀
 
 plugins:
   - jekyll-seo-tag

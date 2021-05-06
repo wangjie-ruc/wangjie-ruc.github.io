@@ -13,20 +13,32 @@
   <ul class="contact-list">
     {% if site.author -%}
       <li>
-        <i class="sidebar-icon fas fa-at"></i>
+        <i class="sidebar-icon">
+          <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="#icon-at"></use>
+          </svg>
+        </i>
         <span class="contact-info p-name">{{ site.author | escape }}</span>
       </li>
     {%- endif %}
     {% if site.email -%}
       <li>
-        <i class="sidebar-icon fas fa-envelope"></i>
+        <i class="sidebar-icon">
+          <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="#icon-tubiao209"></use>
+          </svg>
+        </i>
         <a class="contact-info u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
       </li>
     {%- endif %}
     {% if site.location -%}
       <li>
-        <i class="sidebar-icon fas fa-location-arrow"></i>
-        <a class="contact-info u-location" href="https://www.google.com/maps/search/{{ site.location }}">{{ site.location }}</a>
+        <i class="sidebar-icon">
+          <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="#icon-location"></use>
+          </svg>
+        </i>
+        <a class="contact-info u-location" href="https://map.baidu.com/search/{{ site.location }}">{{ site.location }}</a>
       </li>
     {%- endif %}
   </ul>
@@ -35,7 +47,11 @@
 {% if site.subscribe != false -%}
 <div class="sidebar-section feed-subscribe">
   <a href="{{ 'feed.xml' | relative_url }}">
-    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
+    <i class="sidebar-icon">
+      <svg class="icon-sm" aria-hidden="true">
+        <use xlink:href="#icon-rss"></use>
+      </svg>
+    </i><span>Subscribe</span>
   </a>
 </div>
 {%- endif %}
@@ -45,7 +61,15 @@
     <ul class="social-icons">
       {% for social in site.data.social -%}
         <li>
-          <a class="social-icon" href="{{ social.url }}"><i class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+          <!-- <a class="social-icon" href="{{ social.url }}"><i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i></a> -->
+          <a class="social-icon" href="{{ social.url }}">
+            <i title="{{ social.title }}">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#{{ social.icon | default: 'icon-Link'}}"></use>
+              </svg>
+            </i>
+          </a>
+
         </li>
       {%- endfor %}
     </ul>
