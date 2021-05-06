@@ -1,6 +1,18 @@
 // Placeholder to allow customizing styles.
 
 .icon {
+    @media screen and (min-width: $on-large){
+        width: 2em; height: 2em;
+    }
+    @media screen and (max-width: $on-small){
+        width: 5em; height: 5em;
+    }
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.icon-fix {
     width: 2em; height: 2em;
     vertical-align: -0.15em;
     fill: currentColor;
@@ -8,8 +20,19 @@
 }
 
 .icon-sm{
-    width: 1em; height: 1em;
+    @media screen and (min-width: $on-large){
+        width: 1em; height: 1em;
+    }
+    @media screen and (max-width: $on-small){
+        width: 2em; height: 2em;
+    }
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
+}
+
+.contact-info, .rss{
+    @include media-query($on-medium) {
+        @include relative-font-size(1.5)
+    }
 }

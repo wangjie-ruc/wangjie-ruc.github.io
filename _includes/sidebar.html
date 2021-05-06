@@ -45,13 +45,13 @@
 </div>
 
 {% if site.subscribe != false -%}
-<div class="sidebar-section feed-subscribe">
+<div class="sidebar-section  feed-subscribe">
   <a href="{{ 'feed.xml' | relative_url }}">
     <i class="sidebar-icon">
       <svg class="icon-sm" aria-hidden="true">
         <use xlink:href="#icon-rss"></use>
       </svg>
-    </i><span>Subscribe</span>
+    </i><span class="rss">Subscribe</span>
   </a>
 </div>
 {%- endif %}
